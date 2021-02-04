@@ -1,0 +1,142 @@
+[
+  {
+    "head": "snake",
+    "body": "stork-macaw",
+    "arms": 8,
+    "legs": 9,
+    "tails": 17
+  },
+  {
+    "head": "raven",
+    "body": "cobra-swift",
+    "arms": 6,
+    "legs": 12,
+    "tails": 18
+  },
+  {
+    "head": "bull",
+    "body": "corgi-rat",
+    "arms": 8,
+    "legs": 12,
+    "tails": 20
+  },
+  {
+    "head": "snake",
+    "body": "toad-tick",
+    "arms": 6,
+    "legs": 6,
+    "tails": 12
+  },
+  {
+    "head": "bunny",
+    "body": "gibbon-molly",
+    "arms": 8,
+    "legs": 3,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "shark-pika",
+    "arms": 6,
+    "legs": 12,
+    "tails": 18
+  },
+  {
+    "head": "raven",
+    "body": "coyote-dane",
+    "arms": 8,
+    "legs": 12,
+    "tails": 20
+  },
+  {
+    "head": "raven",
+    "body": "snail-mammal",
+    "arms": 6,
+    "legs": 12,
+    "tails": 18
+  },
+  {
+    "head": "lion",
+    "body": "joey-troll",
+    "arms": 6,
+    "legs": 9,
+    "tails": 15
+  },
+  {
+    "head": "bunny",
+    "body": "gar-ghost",
+    "arms": 8,
+    "legs": 9,
+    "tails": 17
+  },
+  {
+    "head": "bunny",
+    "body": "ghost-mink",
+    "arms": 6,
+    "legs": 3,
+    "tails": 9
+  },
+  {
+    "head": "snake",
+    "body": "perch-osprey",
+    "arms": 2,
+    "legs": 9,
+    "tails": 11
+  },
+  {
+    "head": "lion",
+    "body": "sheep-orca",
+    "arms": 4,
+    "legs": 12,
+    "tails": 16
+  },
+  {
+    "head": "raven",
+    "body": "koala-stud",
+    "arms": 4,
+    "legs": 6,
+    "tails": 10
+  },
+  {
+    "head": "raven",
+    "body": "bass-whale",
+    "arms": 8,
+    "legs": 6,
+    "tails": 14
+  },
+  {
+    "head": "raven",
+    "body": "prawn-marlin",
+    "arms": 10,
+    "legs": 6,
+    "tails": 16
+  },
+  {
+    "head": "bull",
+    "body": "kodiak-bison",
+    "arms": 6,
+    "legs": 12,
+    "tails": 18
+  },
+  {
+    "head": "raven",
+    "body": "fox-maggot",
+    "arms": 4,
+    "legs": 12,
+    "tails": 16
+  },
+  {
+    "head": "raven",
+    "body": "goose-ox",
+    "arms": 6,
+    "legs": 6,
+    "tails": 12
+  },
+  {
+    "head": "lion",
+    "body": "shrimp-akita",
+    "arms": 6,
+    "legs": 12,
+    "tails": 18
+  }
+]
