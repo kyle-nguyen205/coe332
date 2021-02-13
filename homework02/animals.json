@@ -1,0 +1,142 @@
+[
+  {
+    "head": "bull",
+    "body": "emu-sheep",
+    "arms": 8,
+    "legs": 3,
+    "tails": 11
+  },
+  {
+    "head": "lion",
+    "body": "earwig-muskox",
+    "arms": 8,
+    "legs": 12,
+    "tails": 20
+  },
+  {
+    "head": "bull",
+    "body": "insect-pika",
+    "arms": 8,
+    "legs": 3,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "ghoul-mouse",
+    "arms": 2,
+    "legs": 9,
+    "tails": 11
+  },
+  {
+    "head": "bull",
+    "body": "skunk-cobra",
+    "arms": 4,
+    "legs": 3,
+    "tails": 7
+  },
+  {
+    "head": "snake",
+    "body": "viper-drake",
+    "arms": 10,
+    "legs": 12,
+    "tails": 22
+  },
+  {
+    "head": "lion",
+    "body": "boxer-hornet",
+    "arms": 10,
+    "legs": 9,
+    "tails": 19
+  },
+  {
+    "head": "bunny",
+    "body": "swift-toucan",
+    "arms": 10,
+    "legs": 9,
+    "tails": 19
+  },
+  {
+    "head": "snake",
+    "body": "calf-calf",
+    "arms": 8,
+    "legs": 12,
+    "tails": 20
+  },
+  {
+    "head": "bull",
+    "body": "viper-gecko",
+    "arms": 2,
+    "legs": 9,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "chow-elf",
+    "arms": 4,
+    "legs": 9,
+    "tails": 13
+  },
+  {
+    "head": "bunny",
+    "body": "ghost-molly",
+    "arms": 2,
+    "legs": 9,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "deer-coral",
+    "arms": 2,
+    "legs": 12,
+    "tails": 14
+  },
+  {
+    "head": "lion",
+    "body": "dane-lizard",
+    "arms": 6,
+    "legs": 6,
+    "tails": 12
+  },
+  {
+    "head": "bull",
+    "body": "wasp-bat",
+    "arms": 8,
+    "legs": 12,
+    "tails": 20
+  },
+  {
+    "head": "raven",
+    "body": "bass-gannet",
+    "arms": 2,
+    "legs": 3,
+    "tails": 5
+  },
+  {
+    "head": "snake",
+    "body": "cattle-ferret",
+    "arms": 2,
+    "legs": 9,
+    "tails": 11
+  },
+  {
+    "head": "snake",
+    "body": "lynx-stud",
+    "arms": 2,
+    "legs": 3,
+    "tails": 5
+  },
+  {
+    "head": "bull",
+    "body": "martin-kodiak",
+    "arms": 2,
+    "legs": 3,
+    "tails": 5
+  },
+  {
+    "head": "bunny",
+    "body": "ram-panda",
+    "arms": 2,
+    "legs": 3,
+    "tails": 5
+  }
+]
