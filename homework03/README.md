@@ -1,4 +1,4 @@
-# Homework 2                                                                                                                       
+# Homework 3                                                                                                                       
 
 This homework focuses on creating a flask app that reads data from the animals.json file created in previous homeworks. The app contains routes to the data that either returns all of the animals, animals with matching bodies, or animals with matching number of tails depending on the URL parameters. Additionally, an animal_consumer script is created that can request animals.json data from other flask servers. These apps are all containerized and the corresponding image can be pulled off of Dockerhub.
 
