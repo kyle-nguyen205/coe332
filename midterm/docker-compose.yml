@@ -1,0 +1,18 @@
+---
+version: "3"
+
+services:
+  web:
+    build: ./flask
+    container_name: kn8435_web
+    ports:
+      - 5022:5000
+    volumes: 
+      - ./data/data_file.json:/data_file.json
+  redis:
+    image: redis:latest
+    ports: 
+      - 6402:6379
+    volumes: 
+      - ./config/redis.conf:/redis.conf
+    command: ["redis-server", "/redis.conf"]
