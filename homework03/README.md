@@ -1,50 +1,40 @@
-# Homework 2                                                                                                                        
-This homework focuses on containerizing the json-parser scripts in homework 1. Minor changes were made to the files to make them suitable for containerization. New functionality was added to read_animals.py that takes two animals from the animals.json file and "breed" them to create a child sharing the parents' traits. A unit testing script is provided to test the breeding function. A Dockerfile is provided to build the docker image, and a test directory is provided as a location to non-interactively test the container.
-                                                                                                                                 
-## Installation and Usage
+# Homework 3                                                                                                                       
+
+This homework focuses on creating a flask app that reads data from the animals.json file created in previous homeworks. The app contains routes to the data that either returns all of the animals, animals with matching bodies, or animals with matching number of tails depending on the URL parameters. Additionally, an animal_consumer script is created that can request animals.json data from other flask servers. These apps are all containerized and the corresponding image can be pulled off of Dockerhub.
+
+## Installation
 
  First, clone the kyle-nguyen205/coe332 repository into your desired directory and access it.           
 ```bash
 git clone https://github.com/kyle-nguyen205/coe332
-cd coe332/homework02
+cd coe332/homework03
 ```
-Overwrite the existing animals.json file by generating a new one.
-```bash
-python3 generate_animals.py animals.json
+You can access the flask app in two ways, directly or through a docker container. The direct method involves running flask, which will require two terminal windows. Start the flask app on one terminal window, and reserve the second window for the usage section.
 ```
-Read the json file and generate the child. 
-```bash
-python3 read_animals.py animals.json
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run -h localhost -p <port number>
 ```
-The child will have one of the parent's heads, a body combination derived from one of each parent's bodies, a number of arms and legs averaged between the two parents, and the tail as the sum of the arms and legs.            
-                                                                                                                                                                             
-## Building the image
+Note that the port number will correspond to your assigned port number.
 
-To build the hw2 image, use the included Dockerfile. 
+The alternative method involves downloading the docker image and running the flask app in a container. This will not require two terminal windows since the flask server will run inside the container. As long as the container is running, the flask server will be active. 
+```
+docker pull kdnguyen205/hw3:1.0
+docker run --name <container name> -d -p <port number>:5000 kdnguyen205/hw3:1.0
+```        
 
-```bash
-docker build -t username/code:version .
+## Usage
+
+You can interact with the app in two ways, either manually through curl or automatically with animal_consumer.py. Use curl if you want to experiment with different parameters.
 ```
-Alternatively, you can pull my docker image from Docker Hub.
-```bash
-docker pull kdnguyen205/hw2:1.0
-```  
-You can then build the docker image and interact with it through the terminal.
-```bash
-docker run --rm -it kdnguyen205/hw2:1.0 /bin/bash
-```                                                                                                             
-## Using the container
-To run the scripts inside the container, simply go the container home directory and run the following commands. Not that the python3 command is no longer needed since the scripts were made executable in the Dockerfile. Exit the container when finished.
-```bash
-cd /home
-generate_animals.py animals.json
-read_animals.py animals.json
-exit
+curl localhost:5022/animals
+curl localhost:5022/animals/body/kodiak
+curl localhost:5022/animals/tails/5
 ```
-                                                                                                                                                                                                                                  
-## Unit Testing the scripts 
-To unit test the scripts, simply run the unit testing script.  
-```bash
-python3 test_read_animals.py
+The first command will output a list of all the animals and their properties. The second command will output all animals with a kodiak body. Replacing kodiak with a different animal will search for animals that match the input body. Similarly, the third function will search for all animals with the same amount of tails, and the amount can be adjusted as desired.
+
+Alternatively, you can use animal_consumer.py, which automatically requests the URL's in the script. The script by default accesses port 5025, but can be modified to access the URL's curled above. It also gets the status code and headers for each request. 
 ```
-This will test the breed function in read_animals.py by feeding it various input types to each of its parameters and individually checking to see if the inputs raise an assertion error.
+python3 animal_consumer.py
+```      
+The curl and animal_consumer.py URL's can all be modified to access routes from other flask servers.
