@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-kn8435-test-deployment
+  labels:
+    app: kn8435-test-flask
+    username: kn8435
+    env: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kn8435-test-flask
+  template:
+    metadata:
+      labels:
+        app: kn8435-test-flask
+        username: kn8435
+        env: test
+    spec:
+      containers:
+        - name: kn8435-test-flaskapp
+          imagePullPolicy: Always
+          image: kdnguyen205/hw3
+          env:
+          - name: FLASK_APP
+            value: "app.py"
+          ports:
+            - name: http
+              containerPort: 5000
+
