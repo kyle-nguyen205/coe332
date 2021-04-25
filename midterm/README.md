@@ -21,7 +21,7 @@ This will bring up the flask server and redis database, but you will need a seco
 ## Using the container
 A animal_consumer.py script is provided to easily test out the container. Run the script on the second terminal window.
 ```bash
-python3 animal_consumer.py
+python3 ./flask/animal_consumer.py
 ```
 You can also curl the URL's and interact with the container manually, if you prefer. Once you are done, exit out of the container and tear them down.
 
